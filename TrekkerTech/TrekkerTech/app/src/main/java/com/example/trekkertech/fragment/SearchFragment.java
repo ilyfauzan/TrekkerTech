@@ -92,6 +92,13 @@ public class SearchFragment extends Fragment {
                 } else {
                     progressBar.setVisibility(View.GONE);
                 }
+
+                if (newText.isEmpty()) {
+                    recyclerView.setVisibility(View.GONE);
+                } else {
+                    recyclerView.setVisibility(View.VISIBLE);
+                }
+
                 performSearch(newText);
                 return true;
             }
