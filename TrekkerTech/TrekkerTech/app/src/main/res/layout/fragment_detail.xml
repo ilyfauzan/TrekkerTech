@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Root LinearLayout inside ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="350dp"/>
+
+        <!-- FrameLayout to overlay the ImageButton on ImageView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <!-- ImageView for displaying the main image -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_1"
+                android:scaleType="centerCrop" />
+
+            <!-- Back Button at the top left corner of the ImageView -->
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@color/white"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="top|start"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <!-- LinearLayout for the translucent background text area -->
+        <LinearLayout
+            android:id="@+id/bgtrans"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_trans"
+            android:layout_marginTop="-50dp"
+            android:paddingHorizontal="16dp">
+
+            <!-- TextView for displaying the name -->
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView for displaying the country -->
+            <TextView
+                android:id="@+id/textCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Country:"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- LinearLayout for the main content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView for the description -->
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:paddingTop="8dp" />
+
+            <!-- Nested LinearLayout for continent and language -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <!-- LinearLayout for continent -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/location"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/location"/>
+
+                    <TextView
+                        android:id="@+id/textContinent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Continent"
+                        android:textSize="18sp"
+                        android:paddingHorizontal="4dp"/>
+                </LinearLayout>
+
+                <!-- LinearLayout for language -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/language"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="7dp"
+                        android:src="@drawable/language"/>
+
+                    <TextView
+                        android:id="@+id/textLanguage"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Language"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Nested LinearLayout for population and currency -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <!-- LinearLayout for population -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/population"
+                        android:layout_width="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/population"/>
+
+                    <TextView
+                        android:id="@+id/textPopulation"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="4dp"
+                        android:text="Population"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- LinearLayout for currency -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/money"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="6dp"
+                        android:src="@drawable/money" />
+
+                    <TextView
+                        android:id="@+id/textCurrency"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Money"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- LinearLayout for the best time to visit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp">
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/time"/>
+
+                <TextView
+                    android:id="@+id/textBestTimeToVisit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Time to Visit:"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- TextViews for top attractions, local dishes, and activities -->
+            <TextView
+                android:id="@+id/textTopAttractions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Attractions:"
+                android:textSize="18sp"
+                android:layout_marginStart="7dp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textLocalDishes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Dishes:"
+                android:layout_marginStart="7dp"
+                android:textSize="18sp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activities:"
+                android:textSize="18sp"
+                android:layout_marginStart="7dp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

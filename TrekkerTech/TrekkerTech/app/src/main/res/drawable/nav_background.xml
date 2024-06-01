@@ -1,0 +1,10 @@
+<!-- res/drawable/nav_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#03A9F4" />
+    <corners android:radius="16dp" />
+    <shadow
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+</shape>

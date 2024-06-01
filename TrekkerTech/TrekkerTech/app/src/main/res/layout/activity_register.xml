@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginTop="60dp"
+    tools:context=".Activity.RegisterActivity">
+
+    <!-- Title TextView for the app name -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="TrekkerTech"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3" />
+
+    <!-- ImageView for the illustration -->
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loginkartun" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/illustration"
+        android:layout_marginTop="24dp"
+        android:hint="Enter your username"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <!-- Confirm Password EditText -->
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Register"
+        android:textColor="@android:color/white" />
+
+    <!-- Sign In TextView -->
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account? Sign In"
+        android:textColor="@android:color/holo_blue_light" />
+
+</RelativeLayout>
