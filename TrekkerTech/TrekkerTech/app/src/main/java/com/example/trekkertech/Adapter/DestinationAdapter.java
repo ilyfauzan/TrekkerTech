@@ -57,12 +57,12 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
             databaseHelper.close();
 
             if (isInWishlist) {
-                holder.imageViewWishlist.setImageResource(R.drawable.book);
+                holder.imageViewWishlist.setImageResource(R.drawable.lovebook);
             } else {
-                holder.imageViewWishlist.setImageResource(R.drawable.lope);
+                holder.imageViewWishlist.setImageResource(R.drawable.love);
             }
         } else {
-            holder.imageViewWishlist.setImageResource(R.drawable.lope);
+            holder.imageViewWishlist.setImageResource(R.drawable.love);
         }
 
         holder.textName.setOnClickListener(new View.OnClickListener() {
