@@ -4,7 +4,8 @@ Selamat datang di TrekkerTech, aplikasi pendamping terbaik untuk Anda yang suka 
 
 # Daftar Isi
 - Fitur
-- Refrensi
+- Penggunaan
+- API
 
 # Fitur
 TrekkerTech menyediakan beragam fitur yang memudahkan Anda dalam menjelajahi destinasi di seluruh dunia. Fitur-fitur utamanya meliputi
@@ -16,8 +17,14 @@ TrekkerTech menyediakan beragam fitur yang memudahkan Anda dalam menjelajahi des
 - All Destinasi = Untuk melihat daftar lengkap dari semua destinasi yang tersedia dalam aplikasi, tanpa membatasi berdasarkan kriteria tertentu seperti benua atau negara tertentu.
 - Change Profil = Untuk mengubah foto profil.
 
-# Refrensi
-- FreeTestAPI.com
-- Colorhunt.com
+# Penggunaan
+- Login: Masuk ke akun pengguna yang sudah terdaftar.
+- Registrasi: Membuat akun baru di TrekkerTech.
+- Profil: Mengatur informasi pribadi dan preferensi pengguna.
+- Akses Destinasi: Menjelajahi dan mendapatkan informasi tentang destinasi di seluruh dunia.
+
+# API
+- [FreeTestAPI](https://FreeTestAPI.com)
+
 
 
