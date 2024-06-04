@@ -4,4 +4,20 @@ Selamat datang di TrekkerTech, aplikasi pendamping terbaik untuk Anda yang suka 
 
 # Daftar Isi
 - Fitur
-- Penggunaan
+- Refrensi
+
+# Fitur
+TrekkerTech menyediakan beragam fitur yang memudahkan Anda dalam menjelajahi destinasi di seluruh dunia. Fitur-fitur utamanya meliputi
+- Wishlist = Menambahkan destinasi ke dalam daftar wishlist yang ingin dikunjungi.
+- Delete Wishlist = Untuk menghapus destinasi dari daftar wishlist pengguna.
+- Search = Untuk mencari destinasi tertentu berdasarkan nama.
+- Detail Destinasi =  Untuk melihat informasi rinci tentang destinasi tertentu yang mereka minati.
+- Continent Destinasi = Untuk menemukan destinasi yang relevan dengan keinginan mereka berdasarkan wilayah atau konteks geografis tertentu.
+- All Destinasi = Untuk melihat daftar lengkap dari semua destinasi yang tersedia dalam aplikasi, tanpa membatasi berdasarkan kriteria tertentu seperti benua atau negara tertentu.
+- Change Profil = Untuk mengubah foto profil.
+
+# Refrensi
+- FreeTestAPI.com
+- Colorhunt.com
+
+
